@@ -1,0 +1,295 @@
+body {
+    background-image: url("/Website/images/Achtergrondplaat.jpg");
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*--------------------------------------- */
+
+
+.receptenheader {
+    font-size: 50px;
+    color: BLack;
+    text-align: center
+}
+
+.titel {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    background: white;
+    font-family: 'Lobster', cursive;
+
+}
+
+.red {
+    color: red;
+}
+
+.white {
+    color: darkgray
+}
+
+.blue {
+    color: blue;
+}
+.hi {
+    background-color: white;
+        font-family: 'Lobster', cursive;
+    color: red;
+
+
+}
+
+body {
+  margin:0px;
+  padding:0px;
+
+}
+
+.intro {
+    font-size: 40px;
+    text-align: center;
+    background:white;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+
+  background: lightgrey;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+
+    background-color:darkblue;          /* achtergrond kleur van navigatie */
+    font-family: 'Indie Flower', cursive;
+
+
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: red;
+}
+
+.navigation a:hover {
+  background: red ;
+  color: white;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.introductie {
+    text-align: center;
+    font-size: 40px;
+    color: blue;
+    background-color: white;
+    font-family: sans-serif;
+
+}
+
+
+li a:hover {
+    color:red;
+    -webkit-transition: all 0.3s ease-in-out;     /* chome, safari, opera, IOS */
+    -moz-transition:all 0.3s ease-in-out;         /* Firefox */
+    -o-transition:all 0.3s ease-in-out;           /* oudere versies */
+    -ms-transition: all 0.3s ease-in-out;         /* explorer, edge */
+}
+
+index.html {
+    background-image: url("../images/Achtergrondplaat.jpg") no-repeat center center fixed;   /* geen herhaling, centeren width, centeren height, vaste positie */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.logo {
+    position:fixed;                     /* positie is fixed op de onderstaande hoogstes/breedtes */
+    bottom:0px;
+    left:0px;
+    font-size:10px;
+    padding:0px 0px 40px 40px;
+
+}
+
+/* ----------------- Taarten ---------------- */
+
+.flex-container-taarten {
+  display: flex;                 /* voor het maken van een reponsive site */
+  flex-wrap:wrap;                /* verdeeld over meerdere rij */
+  justify-content: center;       /* zal altijd gecentreerd zijn op de pagina */
+}
+
+.flex-container-taarten > section {    /* opmaak van de section */
+  background-color: #f1f1f1;
+  width:400px;
+  height:500px;
+  margin: 10px;
+  text-align: center;
+}
+
+.flex-container-taarten img {           /* opmaak van de image */
+    width:400px;
+    height:500px;
+    display:block;
+}
+
+                                        /* text hover */
+
+.taarten-container {
+  position: relative;
+  margin:30px;
+}
+
+.taarten-container .overlay {           /* overlay effect */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease-in-out;
+  background-color: black;
+}
+
+.taarten-container:hover .overlay {     /* overlay effect*/
+  opacity: 0.8;
+}
+
+.taarten-container .text {              /* text positie kleur, font en dat het op elke browser laad */
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+.algemeen-section, .algemeen-section {
+  margin-left:55px;
+  width:50%;
+  background-color:white;
+  padding:40px;
+
+}
+
+h2 {
+  font-family: "Arial Black", Gadget, sans-serif;          /* fonts */
+}
+
+strong {
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+
+/* ----------------- interview ---------------- */
+
+
+.algemeen-section p {                                     /* hoogte tussen lijnen */
+  line-height: 1.5;
+}
+
+.algemeenimg  {                                           /* breedte interview img */
+  width:100%;
+  display; flex;
+  justify-content: center;
+}
+
+
+/*
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+*/
