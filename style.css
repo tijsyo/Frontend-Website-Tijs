@@ -1,8 +1,8 @@
 /*--------------------------------------- bovenkant pagina en opmaak */
 
-body
-    {
-    background-image: url("images/Achtergrondplaat.jpg");
+body    {
+    background-image: url("/images/Achtergrondplaat.jpg");
+    /*     background-image: url("/Website/images/Achtergrondplaat.jpg"); */
 
     transform: rotate(720deg);
     /* source https://codepen.io/CodeXYZ/pen/xbdxyO */
@@ -131,7 +131,7 @@ index.html {
 }
 
 
-/* ----------------- Taarten ---------------- */
+/* ----------------- Taarten en workshops container en foto hovers ---------------- */
 
 .flex-container-taarten {
     display: flex;
@@ -186,7 +186,7 @@ index.html {
 }
 
 .taarten-container .text {
-    /* text positie kleur, font en dat het op elke browser laad */
+    /* text positie kleur, */
     color: white;
     font-size: 20px;
     position: absolute;
@@ -462,7 +462,7 @@ h3:hover {
 }
 
 
-.formbutton:hover {
+  .formbutton:hover {
     opacity: 0.5;
     font-size: 15px;
     font-family: 'Lobster', cursive;
