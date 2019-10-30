@@ -1,11 +1,11 @@
 /*--------------------------------------- bovenkant pagina en opmaak */
 
 body
-
-/*:hover */
     {
     background-image: url("/Website/images/Achtergrondplaat.jpg");
     background-image: url("/images/Achtergrondplaat.jpg");
+     background-image: url("Achtergrondplaat.jpg");
+
 
     transform: rotate(720deg);
     /* source https://codepen.io/CodeXYZ/pen/xbdxyO */
