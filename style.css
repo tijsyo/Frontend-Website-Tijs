@@ -1,55 +1,22 @@
-body {
+/*--------------------------------------- bovenkant pagina en opmaak */
+
+body
+
+/*:hover */
+    {
     background-image: url("/Website/images/Achtergrondplaat.jpg");
+    transform: rotate(720deg);
+    /* source https://codepen.io/CodeXYZ/pen/xbdxyO */
+    transition: all 2s ease-in-out;
+    font-family: 'Oswald', sans-serif;
 }
-
-
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-
-/* Style the submit button */
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/*--------------------------------------- */
-
-
-.receptenheader {
-    font-size: 50px;
-    color: BLack;
-    text-align: center
-}
+/* kop hoofdpagina */
+/* tussentitels pagina's css */
 
 .titel {
     font-size: 40px;
@@ -60,190 +27,232 @@ form.example::after {
 
 }
 
+/* titel hoofdpagina font kleuren */
 .red {
-    color: red;
+    color: purple;
 }
 
 .white {
-    color: darkgray
+    color: black;
 }
 
 .blue {
     color: blue;
+    text-align: center;
 }
-.hi {
-    background-color: white;
-        font-family: 'Lobster', cursive;
+
+.titelh {
+    font-family: 'Lobster', cursive;
     color: red;
-
-
+    text-align: center;
+    margin-left: 65px;
+    margin-top: 50px;
 }
+
+/* */
 
 body {
-  margin:0px;
-  padding:0px;
+    margin: 0px;
+    padding: 0px;
 
 }
+
+/* titel hoofdpagina css */
 
 .intro {
     font-size: 40px;
     text-align: center;
-    background:white;
     font-family: 'Oswald', sans-serif;
 
-
-}
-
-.navigation {
-  list-style: none;
-  margin: 0;
-
-  background: lightgrey;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: center;
-
-    background-color:darkblue;          /* achtergrond kleur van navigatie */
-    font-family: 'Indie Flower', cursive;
-
-
-}
-
-.navigation a {
-  text-decoration: none;
-  display: block;
-  padding: 1em;
-  color: red;
-}
-
-.navigation a:hover {
-  background: red ;
-  color: white;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out
 }
 
 h1 {
     color: red;
     text-align: center;
+    margin-bottom: 70px;
 }
 
 .introductie {
     text-align: center;
     font-size: 40px;
     color: blue;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.3);
     font-family: sans-serif;
 
 }
 
+/* navigatie bar website */
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+
+    background-color: yellow;
+    /* achtergrond kleur van navigatie */
+    font-family: 'Indie Flower', cursive;
+
+}
+
+.logoheader {
+    align-self: flex-start;
+
+}
+
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: red;
+}
+
+.navigation a:hover {
+    background: red;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out
+}
+
+.acitve {
+    color: red;
+}
+
+
 
 li a:hover {
-    color:red;
-    -webkit-transition: all 0.3s ease-in-out;     /* chome, safari, opera, IOS */
-    -moz-transition:all 0.3s ease-in-out;         /* Firefox */
-    -o-transition:all 0.3s ease-in-out;           /* oudere versies */
-    -ms-transition: all 0.3s ease-in-out;         /* explorer, edge */
+    color: red;
 }
 
 index.html {
-    background-image: url("../images/Achtergrondplaat.jpg") no-repeat center center fixed;   /* geen herhaling, centeren width, centeren height, vaste positie */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-image: url("../images/Achtergrondplaat.jpg") no-repeat center center fixed;
+    /* geen herhaling, centeren width, centeren height, vaste positie */
     background-size: cover;
 }
 
 
-
-.logo {
-    position:fixed;                     /* positie is fixed op de onderstaande hoogstes/breedtes */
-    bottom:0px;
-    left:0px;
-    font-size:10px;
-    padding:0px 0px 40px 40px;
-
-}
-
 /* ----------------- Taarten ---------------- */
 
 .flex-container-taarten {
-  display: flex;                 /* voor het maken van een reponsive site */
-  flex-wrap:wrap;                /* verdeeld over meerdere rij */
-  justify-content: center;       /* zal altijd gecentreerd zijn op de pagina */
+    display: flex;
+    /* voor het maken van een reponsive site */
+    flex-wrap: wrap;
+    /* verdeeld over meerdere rij */
+    justify-content: center;
+    /* zal altijd gecentreerd zijn op de pagina */
+    margin-left: 50px;
 }
 
-.flex-container-taarten > section {    /* opmaak van de section */
-  background-color: #f1f1f1;
-  width:400px;
-  height:500px;
-  margin: 10px;
-  text-align: center;
+.flex-container-taarten > section {
+    /* opmaak van de section */
+    background-color: #f1f1f1;
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    text-align: center;
 }
 
-.flex-container-taarten img {           /* opmaak van de image */
-    width:400px;
-    height:500px;
-    display:block;
+.flex-container-taarten img {
+    /* opmaak van de image */
+    width: 400px;
+    height: 500px;
+    display: block;
 }
 
-                                        /* text hover */
-
+/* text hover */
 .taarten-container {
-  position: relative;
-  margin:30px;
+    position: relative;
+    margin: 30px;
 }
 
-.taarten-container .overlay {           /* overlay effect */
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease-in-out;
-  background-color: black;
+.taarten-container .overlay {
+    /* overlay effect */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: black;
+    box-shadow: 0.3em 0.3em;
 }
 
-.taarten-container:hover .overlay {     /* overlay effect*/
-  opacity: 0.8;
+.taarten-container:hover .overlay {
+    /* overlay effect*/
+    opacity: 0.8;
 }
 
-.taarten-container .text {              /* text positie kleur, font en dat het op elke browser laad */
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family: "Arial Black", Gadget, sans-serif;
+.taarten-container .text {
+    /* text positie kleur, font en dat het op elke browser laad */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
 }
 
+/* 2de taarten container voor javascript */
 
-.algemeen-section, .algemeen-section {
-  margin-left:55px;
-  width:50%;
-  background-color:white;
-  padding:40px;
+/* text hover */
+.taarten-container2 {
+    position: relative;
+    margin: 30px;
+    opacity: 1;
+}
 
+.taarten-container2 .overlay {
+    /* overlay effect */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    background-color: black;
+    box-shadow: 0.3em 0.3em;
+}
+
+.taarten-container2:hover .overlay {
+    /* overlay effect*/
+    opacity: 0.8;
+}
+
+.taarten-container2 .text {
+    /* text positie kleur, font en dat het op elke browser laad */
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+/* opmaak tekst artikels */
+
+.algemeen-section {
+    margin: auto;
+    width: 40%;
+    background-color: white;
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
-  font-family: "Arial Black", Gadget, sans-serif;          /* fonts */
+    font-family: "Arial Black", Gadget, sans-serif;
+    /* fonts */
 }
 
 strong {
@@ -251,45 +260,227 @@ strong {
 }
 
 
-/* ----------------- interview ---------------- */
-
-
-.algemeen-section p {                                     /* hoogte tussen lijnen */
-  line-height: 1.5;
+.algemeen-section p {
+    /* hoogte tussen lijnen */
+    line-height: 1.5;
 }
 
-.algemeenimg  {                                           /* breedte interview img */
-  width:100%;
-  display; flex;
-  justify-content: center;
+.algemeen-section .algemeenimg {
+    width: 100%;
+    height: 100%
 }
 
+.algemeenimg:hover {
+    opacity: 0.8;
+    background: black;
 
-/*
-@media all and (max-width: 800px) {
-  .navigation {
-    justify-content: space-around;
-  }
 }
 
-@media all and (max-width: 600px) {
-  .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    padding: 0;
-  }
+/* recepten pagina grid css source: https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
-  .navigation a {
+.grid-container {
+    margin-left: 50px;
+    margin-bottom: 100px;
+    background-size: cover;
+    padding: 10px 10px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 4fr));
+    /* https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/ */
+    grid-row-gap: 100px;
+}
+
+.grid-item {
+    height: 250px;
+    transition: .5s ease-in-out;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+/* tekstopmaak recepten pagina */
+
+.receptentekst {
+    width: 400px;
     text-align: center;
-    padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-
-
-  .navigation li:last-of-type a {
-    border-bottom: none;
-  }
+    background: rgba(255, 255, 255, 0.7);
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+    border-style: dotted;
 }
 
-*/
+.receptentekst:hover {
+    color: hotpink;
+    border-style: double;
+}
+
+.receptenbutton {
+    display;
+    flex;
+    align-self: center;
+}
+
+
+.grid-item:hover {
+    opacity: 0.8;
+    transition: .5s ease-in-out;
+    background-color: purple;
+    border-style: double;
+
+
+}
+
+.grid-item img {
+    height: 250px;
+    width: 400px;
+    box-sizing: border-box;
+    border-style: dotted;
+    color: blueviolet;
+}
+
+/* Searchbar recepten */
+
+.show-search {
+    background: Green;
+}
+
+
+.zoeken {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.zoek {
+    border-style: dotted;
+    color: hotpink;
+}
+
+.zoekveld {
+    height: 40px;
+    font-size: 20px;
+    width: 400px;
+}
+
+.zoek:hover {
+    border-style: dashed;
+    color: crimson;
+}
+
+/* dropdown recepten */
+
+.receptendd {
+    display: flex;
+    justify-content: center;
+    margin: 75px;
+
+}
+
+.receptenddtekst {
+    width: 300px;
+    height: 40px;
+    border-style: dotted;
+    color: hotpink;
+    font-size: 22px;
+    text-align: center;
+}
+
+.receptenddtekst:hover {
+    border-style: dashed;
+    color: crimson;
+}
+
+
+/* formulier css */
+
+
+.form {
+    text-align: center;
+    display: flex;
+    height: 600px;
+    background-color: hotpink;
+    justify-content: center;
+    align-self: flex-start;
+    box-shadow: 0.2em 0.2em;
+    box-sizing: border-box;
+
+
+}
+
+
+form {
+    width: 2000px;
+    height: 500px;
+    margin: auto;
+
+}
+
+input {
+    width: 40%;
+    height: 2em;
+
+}
+
+
+legend {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* koptekst form */
+h3 {
+    font-size: 35px;
+    text-align: center;
+}
+
+h3:hover {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+}
+
+
+
+/* form button css */
+
+.formbutton {
+    width: 10%;
+    height: 3em;
+    font-size: 13px;
+    background: rgba(78, 255, 56);
+    border-style: double;
+}
+
+/* media qeuries form */
+
+@media screen and (max-width: 750px) {
+    .formbutton {
+        font-size: 10px;
+        width: 20%;
+    }
+}
+
+
+.formbutton:hover {
+    opacity: 0.5;
+    font-size: 15px;
+    font-family: 'Lobster', cursive;
+}
+
+@media screen and (max-width: 750px) {
+    .formtekst {
+        font-size: 25px;
+    }
+
+    .input {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h3:hover {
+        font-size: 30px;
+    }
+}
