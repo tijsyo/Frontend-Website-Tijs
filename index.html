@@ -13,33 +13,35 @@
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
 
-
-
 </head>
 
 <body>
 
+    <header>
+        <nav>
+            <ul class="navigation">
+                <!-- menu -->
+                <img class="logoheader" src="images/hhblogo.png" height="60" alt="" />
 
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="workshop.html">Recepten</a></li>
+                <li><a href="recepten.html">Detail</a></li>
+                <li><a href="#">ranglijst</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul class="navigation">
-        <!-- menu -->
-        <img class="logoheader" src="images/hhblogo.png" height="60" alt="" />
-
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="workshop.html">Recepten</a></li>
-        <li><a href="recepten.html">Detail</a></li>
-        <li><a href="#">ranglijst</a></li>
-    </ul>
 
 
     <h1> <img class="logoheader" src="images/hhblogo.png" height="60" alt="" />Heel Holland Bakt <img class="logoheader" src="images/hhblogo.png" height="60" alt="" /></h1> <!-- titel op de pagina -->
-    <div class="introductie">
-        <strong class="titelh">Wat bieden wij aan?</strong> <br>
+    <div id="introductie">
+
+        <strong id="titel">Wat bieden wij aan?</strong> <br>
 
         <ul class="intro" style="list-style: none;">
-            <li class="red">-Gezellige workshops!</li>
-            <li class="white">-Recepten van andere enthousiaste bakkers.</li>
-            <li class="blue">-Algemene informatie over HHB.</li>
+            <li id="red">-Gezellige workshops!</li>
+            <li id="white">-Recepten van andere enthousiaste bakkers.</li>
+            <li id="blue">-Algemene informatie over HHB.</li>
         </ul>
 
 
@@ -50,11 +52,11 @@
 
     <main>
         <!-- section > article -->
-        <section class="flex-container-taarten">
+        <section id="flex-container-taarten">
 
-            <a href="recepten.html">
+            <a href="recepten.html" tabindex="0">
                 <!-- wordt steeds herhaald per afbeelding -->
-                <article class="taarten-container">
+                <article class="taarten-container eerste-taart">
                     <img src="images/taart1.jpeg" alt="" class="fashionimg" />
                     <div class="overlay">
                         <!-- on hover -->
@@ -63,7 +65,7 @@
                 </article>
             </a>
 
-            <a href="recepten.html">
+            <a href="recepten.html" tabindex="0">
                 <article class="taarten-container">
                     <img src="images/taart2.jpeg" alt="" class="fashionimg" />
                     <div class="overlay">
@@ -72,7 +74,7 @@
                 </article>
             </a>
 
-            <a href="recepten.html">
+            <a href="recepten.html" tabindex="0">
                 <article class="taarten-container">
                     <img src="images/taart3.jpeg" alt="" class="fashionimg" />
                     <div class="overlay">
@@ -81,7 +83,7 @@
                 </article>
             </a>
 
-            <a href="recepten.html">
+            <a href="recepten.html" tabindex="0">
                 <article class="taarten-container">
                     <img src="images/taart4.jpeg" alt="" class="fashionimg" />
                     <div class="overlay">
@@ -90,28 +92,28 @@
                 </article>
             </a>
 
-            <article class="taarten-container2">
+            <article class="taarten-container2" tabindex="0">
                 <img src="images/workshops1.jpeg" alt="" class="fashionimg" />
                 <div class="overlay">
                     <p class="text">Omgeving workshops</p>
                 </div>
             </article>
 
-            <article class="taarten-container2">
+            <article class="taarten-container2" tabindex="0">
                 <img src="images/workshops2.jpeg" alt="" class="fashionimg" />
                 <div class="overlay">
                     <p class="text">Workshops begeleider</p>
                 </div>
             </article>
 
-            <article class="taarten-container2">
+            <article class="taarten-container2" tabindex="0">
                 <img src="images/workshops3.jpeg" alt="" class="fashionimg" />
                 <div class="overlay">
                     <p class="text">Een mogelijke workshops locatie</p>
                 </div>
             </article>
 
-            <article class="taarten-container2">
+            <article class="taarten-container2" tabindex="0">
                 <img src="images/workshop4.jpeg" alt="" class="fashionimg" />
                 <div class="overlay">
                     <p class="text">Workshops in actie</p>
@@ -123,61 +125,72 @@
 
 
 
-            <main>
+        <main>
 
-                <p class="titel"> Artikelen HHB</p>
+            <p class="titel"> Artikelen HHB</p>
 
-                <section class="algemeen-section">
-                    <!-- section > article -->
+            <section class="algemeen-section">
+                <!-- section > article -->
 
-                    <article class="">
-                        <img src="images/artikel1.jpeg" alt="/" class="algemeenimg" />
-                        <h2>Nicole deelt haar HHB-ervaring </h2>
-                        <p>bron: <a href="https://heelhollandbakt.omroepmax.nl/extra/artikelen/nicole-deelt-haar-hhb-ervaring/">HHB</a></p>
-                    </article>
+                <article class="">
+                    <img src="images/artikel1.jpeg" alt="/" class="algemeenimg" />
+                    <h2>Nicole deelt haar HHB-ervaring </h2>
+                    <p>bron: <a href="https://heelhollandbakt.omroepmax.nl/extra/artikelen/nicole-deelt-haar-hhb-ervaring/">HHB</a></p>
+                </article>
 
-                    <cite>"Nicole deelt haar HHB-ervaring."</cite>
+                <cite>"Nicole deelt haar HHB-ervaring."</cite>
 
-                    <p> We zullen de Rotterdamse Nicole niet snel vergeten. Is het niet om haar altijd-stralende-glimlach, dan is het wel om haar uitbundige taarten. En dat terwijl ze in eerste instantie niet eens per se mee wilde doen aan Heel Holland Bakt. Desondanks haalde Nicole alles uit de kast om indruk te maken op de jury. Hiermee wist ze Janny en Robèrt keer op keer te verrassen. </p>
+                <p> We zullen de Rotterdamse Nicole niet snel vergeten. Is het niet om haar altijd-stralende-glimlach, dan is het wel om haar uitbundige taarten. En dat terwijl ze in eerste instantie niet eens per se mee wilde doen aan Heel Holland Bakt. Desondanks haalde Nicole alles uit de kast om indruk te maken op de jury. Hiermee wist ze Janny en Robèrt keer op keer te verrassen. </p>
 
-                    <p><strong>Laatste zetje</strong><br>
-                        <em>Haar deelname hebben we voor een deel aan haar vriend te danken. Hij gaf haar het laatste zetje in de goede richting. Ook stelde hij een fotoalbum samen van Nicole’s mooiste taarten. Onder het mom van; ga hier de jury wel mee overtuigen. Als we haar vragen hoe ze de HHB-episode uiteindelijk zelf heeft ervaren, antwoordt ze volmondig: “Super leuk! Het was zo gezellig, mede door de leuke mensen.”.</em>
-                    </p>
+                <p><strong>Laatste zetje</strong><br>
+                    <em>Haar deelname hebben we voor een deel aan haar vriend te danken. Hij gaf haar het laatste zetje in de goede richting. Ook stelde hij een fotoalbum samen van Nicole’s mooiste taarten. Onder het mom van; ga hier de jury wel mee overtuigen. Als we haar vragen hoe ze de HHB-episode uiteindelijk zelf heeft ervaren, antwoordt ze volmondig: “Super leuk! Het was zo gezellig, mede door de leuke mensen.”.</em>
+                </p>
 
-                </section>
+            </section>
 
 
-                <!-- Formulier -->
+            <!-- Formulier -->
 
-                <div class="form">
-                    <form>
-                        <h3 class="formtekst">Blijf altijd op de hoogte!</h3>
+            <div id="form">
+                <form>
+                    <fieldset>
+                        <legend>Blijf altijd op de hoogte!</legend>
 
-                        <legend> Naam </legend>
-                        <label for="">
-                            <input type="text">
-                        </label>
-                        <legend> Achternaam</legend>
-                        <label for="">
-                            <input type="text">
-                        </label>
-                        <legend> Leeftijd </legend>
-                        <label for="">
-                            <input type="number">
-                        </label>
-                        <legend> Email-Adres</legend>
-                        <label for="">
-                            <input type="email" class="formtekst">
-                        </label>
-                        <br>
-                        <br>
-                        <label for="">
-                            <button class="formbutton"> Verzenden </button>
-                        </label>
-                    </form>
-                </div>
+                        <div id="formdiv">
+                            <label for="Voornaam">Voornaam
 
-            </main>
+                            </label>
+                            <input type="text" id="Voornaam" placeholder="Tijs">
+                        </div>
+
+                        <div id="formdiv">
+                            <label for="Achternaam">Achternaam </label>
+                            <input type="text" id="Achternaam" placeholder="van der Linden">
+                        </div>
+
+                        <div id="formdiv">
+                            <label for="Leeftijd">Leeftijd</label>
+                            <input type="number" id="Leeftijd" placeholder="25">
+                        </div>
+
+                        <div id="formdiv">
+                            <label for="Email-adres">Email-adres</label>
+                            <input type="email" id="Email-adres" placeholder="Tijs-bean@hotmail.com">
+                        </div>
+
+                        <button class="formbutton"> Verzenden </button>
+
+                        <div id="buttondiv" tabindex="0">
+                            <div class="overlaytwee">
+                                <p class="text"> Veel kookplezier!</p>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </main>
 
 
 
@@ -187,6 +200,4 @@
     <script src="taart.js/taarten.js"></script>
 
 
-</body>
-
-</html>
+</body></html>
